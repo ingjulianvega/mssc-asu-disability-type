@@ -1,6 +1,6 @@
 [![CircleCI](https://circleci.com/gh/ingjulianvega/mssc-asu-disability-type.svg?style=svg)](https://circleci.com/gh/ingjulianvega/mssc-asu-disability-type)
 
-# ASU evidence type management microservice
+# ASU disability type management microservice
 
 ### BOM
 
