@@ -29,7 +29,7 @@ public class DisabilityTypeServiceImpl implements DisabilityTypeService {
         log.debug("get()...");
         return DisabilityTypeList
                 .builder()
-                .bodyPartList(disabilityTypeMapper.disabilityTypeEntityListToDisabilityTypeDtoList(disabilityTypeRepository.findAll()))
+                .bodyPartList(disabilityTypeMapper.disabilityTypeEntityListToDisabilityTypeDtoList(disabilityTypeRepository.findAllByOrderByName()))
                 .build();
     }
 
