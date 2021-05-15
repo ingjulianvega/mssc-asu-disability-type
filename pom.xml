@@ -6,10 +6,9 @@
     <parent>
         <groupId>ingjulianvega.ximic</groupId>
         <artifactId>mssc-asu-bom</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.2-SNAPSHOT</version>
     </parent>
 
-    <groupId>ingjulianvega.ximic</groupId>
     <artifactId>mssc-asu-disability-type</artifactId>
     <version>0.0.3-SNAPSHOT</version>
     <name>mssc-asu-disability-type</name>
@@ -21,21 +20,6 @@
         <!--Set to name of project-->
         <docker.image.name>mssc-asu-disability-type</docker.image.name>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cache</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>javax.cache</groupId>
-            <artifactId>cache-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-        </dependency>
-    </dependencies>
 
     <build>
         <plugins>
