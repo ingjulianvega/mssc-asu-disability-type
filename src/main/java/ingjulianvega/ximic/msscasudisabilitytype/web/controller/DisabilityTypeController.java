@@ -21,8 +21,8 @@ public class DisabilityTypeController implements DisabilityTypeI {
     private final DisabilityTypeService disabilityTypeService;
 
     @Override
-    public ResponseEntity<DisabilityTypeList> get() {
-        return new ResponseEntity<>(disabilityTypeService.get(), HttpStatus.OK);
+    public ResponseEntity<DisabilityTypeList> get(Boolean usingCache) {
+        return new ResponseEntity<>(disabilityTypeService.get(usingCache), HttpStatus.OK);
     }
 
     @Override

@@ -8,7 +8,7 @@ import ingjulianvega.ximic.msscasudisabilitytype.web.model.DisabilityTypeList;
 import java.util.UUID;
 
 public interface DisabilityTypeService {
-    DisabilityTypeList get();
+    DisabilityTypeList get(Boolean usingCache);
 
     DisabilityTypeDto getById(UUID id);
 

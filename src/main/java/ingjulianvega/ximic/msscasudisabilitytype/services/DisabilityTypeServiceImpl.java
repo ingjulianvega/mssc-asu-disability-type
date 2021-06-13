@@ -23,9 +23,9 @@ public class DisabilityTypeServiceImpl implements DisabilityTypeService {
     private final DisabilityTypeRepository disabilityTypeRepository;
     private final DisabilityTypeMapper disabilityTypeMapper;
 
-    @Cacheable(cacheNames = "disabilityTypeListCache")
+    @Cacheable(cacheNames = "disabilityTypeListCache", condition = "#usingCache == false")
     @Override
-    public DisabilityTypeList get() {
+    public DisabilityTypeList get(Boolean usingCache) {
         log.debug("get()...");
         return DisabilityTypeList
                 .builder()

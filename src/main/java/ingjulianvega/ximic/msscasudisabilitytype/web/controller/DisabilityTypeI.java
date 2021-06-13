@@ -34,7 +34,7 @@ public interface DisabilityTypeI {
     @RequestMapping(value = "/",
             produces = {"application/json"},
             method = RequestMethod.GET)
-    ResponseEntity<DisabilityTypeList> get();
+    ResponseEntity<DisabilityTypeList> get(@Parameter(in = ParameterIn.QUERY, description = "The using of cache", required = true, schema = @Schema()) Boolean usingCache);
 
     @Operation(summary = "Endpoint to get the information of a disability type given the id", description = "Returns a disability type", tags = {"disability type"})
     @ApiResponses(value = {
