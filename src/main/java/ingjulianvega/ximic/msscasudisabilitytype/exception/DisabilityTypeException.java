@@ -1,15 +1,20 @@
 package ingjulianvega.ximic.msscasudisabilitytype.exception;
 
-import lombok.Getter;
+import lombok.*;
+import org.springframework.http.HttpStatus;
 
 @Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class DisabilityTypeException extends RuntimeException {
 
-    private final String code;
+    private HttpStatus httpStatus;
+    private String apiCode;
+    private String error;
+    private String message;
+    private String solution;
 
-    public DisabilityTypeException(final String code, final String message) {
-        super(message);
-        this.code = code;
-    }
 }
 

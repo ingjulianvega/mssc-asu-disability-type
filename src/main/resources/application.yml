@@ -31,15 +31,12 @@ server:
   servlet:
     context-path: /asu/v1/disability-type
 #Logging
-logging:
-  level:
-    root: DEBUG
+#logging:
+#  level:
+#    root: DEBUG
 #Exceptions
 disability-type:
-  success: The operation was successful.
-  prefix: 'DISABILITY-TYPE'
-  error:
-    general: There was an unexpected error. Please try again.
+  api: @artifactId@
 #Eureka
 eureka:
   client:
